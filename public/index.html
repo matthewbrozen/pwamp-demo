@@ -1,0 +1,139 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <meta name="theme-color" content="#2196f3"/>
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preload" href="hero-img.jpg" as="image">
+    <link rel="preload" href="poster.jpg" as="image">
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style amp-custom>
+    /* Add your styles here */
+      .header{
+        width:100%;
+        margin:0 auto;
+        height:60px;
+        background-color:lightblue;
+      }
+
+      .nav-bar{
+        width:100%;
+        margin:0 auto;
+      }
+
+      .hamburger-holder{
+        width:50%;
+        margin:0 auto;
+        float:left;
+      }
+
+      .logo-holder{
+        width:50%;
+        margin:0 auto;
+        float:right;
+      }
+
+      .hamburger{
+        height:20px;
+        width:20px;
+        background-color:red;
+        margin-top:20px;
+        margin-left:5%;
+      }
+
+      .logo{
+        height:20px;
+        width:20px;
+        background-color:orange;
+        margin-top:20px;
+        margin-left:85%;
+      }
+
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ 
+    <link rel="canonical" href="https://amp-demo-d7b8d.firebaseapp.com/">
+    <title>My AMP Page</title>
+    <link rel="manifest" href="/manifest.json">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://www.example.com",
+      "name": "My Webpage",
+      "headline": "webpage title",
+      "description": "Here is the description",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Publisher",
+        "logo": {
+          "url": "https://www.example.com/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.example.com/leader.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+    </script>
+  </head>
+  <body>
+
+    <amp-install-serviceworker src="https://amp-demo-d7b8d.firebaseapp.com/sw.js" layout="nodisplay"></amp-install-serviceworker>
+    <div class="header">
+      <div class="nav-bar">
+        <div class="hamburger-holder">
+          <div class="hamburger"></div>
+        </div>
+        <div class="logo-holder">
+          <div class="logo"></div>
+        </div>
+      </div>
+    </div>
+    <amp-img src="hero-img.jpg"
+             width="1280" 
+             height="720"
+             layout="responsive" 
+             alt="This is a hero image which should be loaded as fast as possible">
+    </amp-img>
+    <amp-video width="640"
+               height="360"
+               layout="responsive"
+               poster="poster.jpg"
+               artwork="artwork.png"
+               title="My video"
+               artist="The artist"
+               album="The album">
+      <source src="https://www.youtube.com/watch?v=mCHUw7ACS8o&list=RDmCHUw7ACS8o&start_radio=1" type="application/vnd.apple.mpegurl">
+      <source src="https://www.youtube.com/watch?v=mCHUw7ACS8o&list=RDmCHUw7ACS8o&start_radio=1" type="video/mp4">
+      <div fallback>This browser does not support the video element.</div>
+    </amp-video>
+  </body>
+</html>
